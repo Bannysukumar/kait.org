@@ -1,47 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# or
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [create-next-app](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+[![License](https://img.shields.io/github/license/Bannysukumar/kait.org)](https://github.com/Bannysukumar/kait.org/blob/main/LICENSE) [![Stars](https://img.shields.io/github/stars/Bannysukumar/kait.org)](https://github.com/Bannysukumar/kait.org/stargazers) [![Last commit](https://img.shields.io/github/last-commit/Bannysukumar/kait.org)](https://github.com/Bannysukumar/kait.org/commits/main)
+
+## Overview
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [create-next-app](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+
+What is actually in the repository: `app/`, `assets/`, `components/`, `config/`, `lib/`, `public/`. GitHub reports the primary language as TypeScript.
+
+Published site recorded on the repository: https://kait-org.vercel.app
+
+## Features
+
+
+- Access Denied page
+- Admin/Club Volume page
+- Admin/KYCList/Kycdetails page
+- Admin/KYCList page
+- Admin/User List/Add User Dialog page
+- Admin/User List/Details page
+- Admin/User List/Resetpassword page
+- Admin/User List page
+- Admin/Withdrawal/Approved page
+- Admin/Withdrawal page
+- Admin/Withdrawal/Pending Approval page
+- Admin/Withdrawal/Rejected page
+
+## Tech Stack
+
+| Technology | Where it shows up |
+|---|---|
+| Next.js | React framework |
+
+## Project Architecture
+
+Next.js App Router project. Pages live under app/.
+
+## Project Structure
+
+```text
+kait.org/
+├── app/
+├── assets/
+├── components/
+├── config/
+├── lib/
+├── public/
+├── store/
+├── utils/
+├── .dockerignore
+├── .env.local
+├── .prettierrc
+├── Dockerfile
+├── _app.tsx
+├── _document.tsx
+├── components.json
+├── eslint.config.mjs
+├── middleware.ts
+├── next.config.js
+├── package-lock.json
+├── package.json
+```
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+git clone https://github.com/Bannysukumar/kait.org.git
+cd kait.org
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Scripts defined in package.json:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `npm run dev` — `next dev --turbopack`
+- `npm run build` — `next build`
+- `npm run start` — `next start`
+- `npm run lint` — `next lint`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+- The repository homepage is https://kait-org.vercel.app.
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# kait.org
-
-<!-- readme-seo: bannysukumar -->
-
-## Open source
-
-This repository is open source and maintained by [Banny Sukumar](https://github.com/Bannysukumar). Kait is published so other developers can study the code and contribute.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
 
 ## License
 
-Released under the [MIT License](LICENSE). Copyright (c) 2026 Banny Sukumar. See [CONTRIBUTING.md](CONTRIBUTING.md) if you want to help.
+Licensed under MIT. See [LICENSE](LICENSE).
+
+## Author
+
+[Banny Sukumar](https://github.com/Bannysukumar)
+
+- GitHub: [@Bannysukumar](https://github.com/Bannysukumar)
+- Portfolio: [adepu-sukumar.vercel.app](https://adepu-sukumar.vercel.app/)
+- LinkedIn: [Adepu Sukumar](https://www.linkedin.com/in/adepu-sukumar-59b423351)
