@@ -1,71 +1,60 @@
-# or
+<!-- readme-seo: bannysukumar-professional-v4 -->
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [create-next-app](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KAIT
 
-[![License](https://img.shields.io/github/license/Bannysukumar/kait.org)](https://github.com/Bannysukumar/kait.org/blob/main/LICENSE) [![Stars](https://img.shields.io/github/stars/Bannysukumar/kait.org)](https://github.com/Bannysukumar/kait.org/stargazers) [![Last commit](https://img.shields.io/github/last-commit/Bannysukumar/kait.org)](https://github.com/Bannysukumar/kait.org/commits/main)
+KAIT is a Next.js admin application. Routes under `app/admin` include users, KYC, withdrawals, a KAIT wallet, stake plans, and staking contracts. The npm package name in `package.json` is `hpe-app-ui`.
 
 ## Overview
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [create-next-app](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+The interface is built with Next.js, React, and MUI. Admin screens present in `app/admin` cover a dashboard, user list, KYC list, beneficiary, club volume, withdrawal review, wallet pending and rejected states, stake plans, and staking contract lists.
 
-
-What is actually in the repository: `app/`, `assets/`, `components/`, `config/`, `lib/`, `public/`. GitHub reports the primary language as TypeScript.
-
-Published site recorded on the repository: https://kait-org.vercel.app
+The repository homepage is https://kait-org.vercel.app. A `Dockerfile` is included. This README does not describe on-chain contract source, because no Solidity file is in the repository root tree that was inspected. The staking screens are admin pages.
 
 ## Features
 
+Confirmed by App Router pages:
 
-- Access Denied page
-- Admin/Club Volume page
-- Admin/KYCList/Kycdetails page
-- Admin/KYCList page
-- Admin/User List/Add User Dialog page
-- Admin/User List/Details page
-- Admin/User List/Resetpassword page
-- Admin/User List page
-- Admin/Withdrawal/Approved page
-- Admin/Withdrawal page
-- Admin/Withdrawal/Pending Approval page
-- Admin/Withdrawal/Rejected page
+- Admin dashboard, profile, and settings
+- User list, add user, user details, and password reset
+- KYC list and KYC details
+- Withdrawal, pending approval, approved, and rejected views
+- KAIT wallet pending, pending approval, and rejected views
+- Stake plans, combine plan, and staking contract list
+- Club volume and beneficiary pages
 
 ## Tech Stack
 
 | Technology | Where it shows up |
 |---|---|
-| Next.js | React framework |
+| Next.js | `next.config.js` and `next dev` script |
+| TypeScript | `tsconfig.json` |
+| React and MUI | `package.json` dependencies |
+| Docker | `Dockerfile` |
 
-## Project Architecture
+## Architecture
 
-Next.js App Router project. Pages live under app/.
+Next.js App Router pages under `app/` → admin route groups for users, KYC, wallet, withdrawals, and staking plans.
 
 ## Project Structure
 
 ```text
 kait.org/
-├── app/
-├── assets/
+├── app/admin/
 ├── components/
-├── config/
 ├── lib/
 ├── public/
 ├── store/
-├── utils/
-├── .dockerignore
-├── .env.local
-├── .prettierrc
 ├── Dockerfile
-├── _app.tsx
-├── _document.tsx
-├── components.json
-├── eslint.config.mjs
-├── middleware.ts
 ├── next.config.js
-├── package-lock.json
-├── package.json
+└── package.json
 ```
 
-## Getting Started
+## Prerequisites
+
+- Node.js
+- npm or yarn (`yarn.lock` is present)
+
+## Installation
 
 ```bash
 git clone https://github.com/Bannysukumar/kait.org.git
@@ -74,16 +63,19 @@ npm install
 npm run dev
 ```
 
-Scripts defined in package.json:
+`npm run dev` runs `next dev --turbopack`.
 
-- `npm run dev` — `next dev --turbopack`
-- `npm run build` — `next build`
-- `npm run start` — `next start`
-- `npm run lint` — `next lint`
+## Configuration
+
+`.env` and `.env.local` are in the repository. Do not commit new secrets. Use those files only as the local configuration the app already expects.
+
+## Usage
+
+Start the dev server and open the admin routes, beginning with `app/admin/dashboard`.
 
 ## Deployment
 
-- The repository homepage is https://kait-org.vercel.app.
+`Dockerfile` and `next.config.js` are in the root. The recorded homepage is https://kait-org.vercel.app.
 
 ## Contributing
 
@@ -95,8 +87,6 @@ Licensed under MIT. See [LICENSE](LICENSE).
 
 ## Author
 
-[Banny Sukumar](https://github.com/Bannysukumar)
+Banny Sukumar
 
-- GitHub: [@Bannysukumar](https://github.com/Bannysukumar)
-- Portfolio: [adepu-sukumar.vercel.app](https://adepu-sukumar.vercel.app/)
-- LinkedIn: [Adepu Sukumar](https://www.linkedin.com/in/adepu-sukumar-59b423351)
+GitHub: https://github.com/Bannysukumar
